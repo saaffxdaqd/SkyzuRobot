@@ -114,7 +114,7 @@ async def logo_gen(event):
         await tbot.send_file(
             event.chat_id,
             file=flnme,
-            caption="Logo by [Skyzu Robot](https://t.me/SkyzuRobot)",
+            caption="Logo by [Ruhani Robot](https://t.me/Ruhani_Robot)",
             force_document=False,
         )
         os.remove(flnme)
@@ -128,7 +128,7 @@ async def logo_gen(event):
 
 @register(pattern="^/wlogo ?(.*)")
 async def logo_(event):
-    xx = await event.reply("`Preparing your logo...`")
+    xx = await event.reply("`Wait For Magic🪄...`")
     name = event.pattern_match.group(1)
     if not name:
         await xx.edit("`Provide some text to draw!\nExample: /wlogo <your name>!`")
