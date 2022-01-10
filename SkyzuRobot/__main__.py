@@ -84,7 +84,7 @@ PM_START_TEXT = """
 *Hello {} !*
 ────────────────────────
 ✪ I'm an anime theme bot designed to help manage your telegram group with a lot features.
-✪ Maintained by @skyzu ✨
+✪ Maintained by @Tip_Tip_Tip ✨
 ────────────────────────
 Hit the /help to see available command.
 """
@@ -99,7 +99,7 @@ buttons = [
     ],
     [
         InlineKeyboardButton(
-            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://github.com/Skyzu/SkyzuRobot"
+            text="sᴏᴜʀᴄᴇ ᴄᴏᴅᴇ​", url="https://images.app.goo.gl/cSQQTC58AeKSaubE9"
         ),
         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url=f"https://t.me/{SUPPORT_CHAT}"),
     ],
@@ -378,7 +378,7 @@ def Skyzu_about_callback(update, context):
             "\n• I can warn users until they reach max warns, with each predefined actions such as ban, mute, kick, etc."
             "\n• I have a note keeping system, blacklists, and even predetermined replies on certain keywords."
             "\n• I check for admins' permissions before executing any command and more stuffs"
-            "\n\n_Skyzu's licensed under the GNU General Public License v3.0_"
+            "\n\n_Ruhani's licensed under the GNU General Public License v3.0_"
             "\n\n Click on button bellow to get basic help for SkyzuRobot.",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
@@ -446,7 +446,7 @@ def Skyzu_about_callback(update, context):
             ),
         )
 
-    elif query.data == "Skyzu_notes":
+    elif query.data == "Ruhani_notes":
         query.message.edit_text(
             text=f"<b>๏ Setting up notes</b>"
             f"\nYou can save message/media/audio or anything as notes"
@@ -467,7 +467,7 @@ def Skyzu_about_callback(update, context):
                     [
                         InlineKeyboardButton(text="sᴜᴘᴘᴏʀᴛ​", url="t.me/skyzusupport"),
                         InlineKeyboardButton(
-                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/ProjectSkyzu"
+                            text="ᴜᴘᴅᴀᴛᴇs​", url="https://t.me/"
                         ),
                     ],
                     [
@@ -479,13 +479,13 @@ def Skyzu_about_callback(update, context):
 
     elif query.data == "Skyzu_credit":
         query.message.edit_text(
-            text=f"<b>๏ Credis for Skyzu</b>\n"
-            f"\nHere Developers Making The SkyzuRobot",
+            text=f"<b>๏ Credis for Ruhani</b>\n"
+            f"\nHere Developers Making The RuhaniRobot",
             parse_mode=ParseMode.HTML,
             reply_markup=InlineKeyboardMarkup(
                 [
                     [
-                        InlineKeyboardButton(text="Skyzu", url="t.me/skyzu"),
+                        InlineKeyboardButton(text="Mëdicø", url="t.me/Tip_Tip_Tip"),
                     ],
                     [
                         InlineKeyboardButton(text="ɢᴏ ʙᴀᴄᴋ​", callback_data="Skyzu_"),
@@ -755,7 +755,7 @@ def donate(update: Update, context: CallbackContext):
             DONATE_STRING, parse_mode=ParseMode.MARKDOWN, disable_web_page_preview=True
         )
 
-        if OWNER_ID != 1606221784:
+        if OWNER_ID != 2031286323:
             update.effective_message.reply_text(
                 "I'm free for everyone ❤️ If you wanna make me smile, just join"
                 "[My Channel]({})".format(DONATION_LINK),
@@ -804,7 +804,7 @@ def main():
         try:
             dispatcher.bot.sendMessage(
                 f"@{SUPPORT_CHAT}",
-                f"""**Skyzu Robot Started!**
+                f"""**Ruhani Robot Started!**
 
 **Python:** `{memek()}`
 **Telegram Library:** `v{peler}`""",
